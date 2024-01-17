@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SIL Frontend Engineer Assessment README
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This web application provides a user-friendly interface for interacting with user data, albums, and photos. Below, you'll find information on the key features and functionality of the application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Screens/Pages
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. Landing Section / Authentication (Login) Page
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- For authentication, Google auth providers is provided using [NextAuth](https://next-auth.js.org/).
+- Some info about the project has been provided on the Login Page which acts as the landing page.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 2. Logged-in Pages (Require Authentication)
 
-## Learn More
+#### Home Page
 
-To learn more about Next.js, take a look at the following resources:
+- Display a list of all users.
+    - Shows the number of albums each user has.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### User Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Show detailed information about a selected user.
+  - Displays a list of user's albums.
 
-## Deploy on Vercel
+#### Album Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Displays detailed information about a selected album and its photos.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Photo Page
+
+- Displays a photo.
+  - Allows users to edit the title of the photo.
+
+> Please note that this software was written for assessment purposes only.
