@@ -2,7 +2,7 @@
 
 ## Overview
 
-This web application provides a user-friendly interface for interacting with user data, albums, and photos. Below, you'll find information on the key features and functionality of the application.
+This web application provides a user-friendly interface for interacting with user data, albums, and photos, and it retrieves data from [{JSON} Placeholder](https://jsonplaceholder.typicode.com/). Below, you'll find information on the key features and functionality of the application.
 
 ## Screens/Pages
 
