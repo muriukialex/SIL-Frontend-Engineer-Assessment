@@ -74,7 +74,7 @@ const AlbumPage = ({ params }: { params: { photoId: string } }) => {
     }
 
     return (
-      <div className="mt-6">
+      <div className="mt-6 grid justify-center p-4 md:block md:p-0">
         {data?.data && (
           <div>
             <h1 className="my-4 text-lg font-medium md:text-xl">
@@ -123,7 +123,7 @@ const AlbumPage = ({ params }: { params: { photoId: string } }) => {
     if (data?.data.title) {
       setValue("title", data?.data.title)
     }
-  }, [data?.data])
+  }, [setValue, data?.data])
 
   return (
     <div className="m-auto flex max-w-screen-md flex-col">
