@@ -281,7 +281,7 @@ const HomePage = () => {
         )}
       </div>
       <div className="relative flex flex-col">
-        <div className="absolute left-1/2 top-2 text-center">
+        <div className="absolute left-10 top-2 text-center md:left-1/2">
           {session?.user?.image && (
             <Image
               src={session?.user?.image}
