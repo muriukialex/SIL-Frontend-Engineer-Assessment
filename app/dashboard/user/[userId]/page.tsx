@@ -77,7 +77,7 @@ const UserPage = ({ params }: { params: { userId: string } }) => {
   }
 
   return (
-    <div className="m-auto flex h-screen max-w-screen-md flex-col bg-gray-100">
+    <div className="m-auto flex max-w-screen-md flex-col bg-gray-100">
       <div className="ml-4 mt-4">
         <Link
           className="rounded bg-gray-500 p-2 text-white hover:bg-gray-700 dark:text-white"
