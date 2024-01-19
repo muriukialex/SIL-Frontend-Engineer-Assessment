@@ -7,6 +7,26 @@ on:
     branches:
       - main
 jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.12.1
+      - name: Clear npm cache
+        run: npm cache clean -f
+      - name: Delete node_modules and package-lock.json
+        run: |
+          rm -rf node_modules
+          rm package-lock.json
+      - name: Install Dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+
   Deploy-Production:
     runs-on: ubuntu-latest
     steps:

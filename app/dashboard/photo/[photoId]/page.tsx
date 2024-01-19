@@ -10,7 +10,7 @@ import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import toast from "react-hot-toast"
 
-const AlbumPage = ({ params }: { params: { photoId: string } }) => {
+const PhotoPage = ({ params }: { params: { photoId: string } }) => {
   const photoId = params.photoId
   const { data, isLoading, error, mutate } = usePhotoDetailsData({
     photoId,
@@ -140,4 +140,4 @@ const AlbumPage = ({ params }: { params: { photoId: string } }) => {
   )
 }
 
-export default AlbumPage
+export default PhotoPage

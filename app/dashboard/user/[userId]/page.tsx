@@ -39,7 +39,7 @@ const UserPage = ({ params }: { params: { userId: string } }) => {
       data?.data && (
         <div className="mb-4">
           <div className="mt-4 flex items-center justify-center">
-            <h1>{data?.data?.name}</h1>
+            <h1 data-testid="name">{data?.data?.name}</h1>
           </div>
           <Card
             username={data?.data.username}

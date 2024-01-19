@@ -13,17 +13,17 @@
     "noEmit": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
     },
     "plugins": [
       {
-        "name": "next"
-      }
+        "name": "next",
+      },
     ],
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5"
+    "target": "es5",
   },
   "exclude": [".next", "node_modules"],
   "include": [
@@ -33,6 +33,7 @@
     "**/*.mjs",
     "**/*.ts",
     "**/*.tsx",
-    "commitlint.config.js"
-  ]
+    "commitlint.config.js",
+    "__tests__/SignInPage.test.jsx",
+  ],
 }
